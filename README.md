@@ -1,9 +1,9 @@
-# DỰ ÁN HỆ THỐNG ĐẶT PHÒNG HOMESTAY TRỰC TUYẾN - NHÓM 16
+# DỰ ÁN HỆ THỐNG ĐẶT PHÒNG HOMESTAY TRỰC TUYẾN - NHÓM 07
 
 > **Môn học:** Kiểm thử phần mềm & Phát triển dự án  
 > **Đề tài:** Nền tảng Đặt phòng & Quản lý Homestay trực tuyến (PTDA Homestay)  
-> **Repository GitHub:** [https://github.com/HuyIT-art/Kiem_Thu_Phan_Mem_Nhom_16](https://github.com/HuyIT-art/Kiem_Thu_Phan_Mem_Nhom_16)  
-> **Nhóm thực hiện:** Nhóm 16  
+> **Repository GitHub:** [https://github.com/HuyIT-art/Ma_Nguon_Mo_Nhom_07](https://github.com/HuyIT-art/Ma_Nguon_Mo_Nhom_07)  
+> **Nhóm thực hiện:** Nhóm 07  
 
 ---
 
@@ -146,10 +146,10 @@ Mở Terminal hoặc PowerShell tại thư mục làm việc mong muốn (ví d�
 
 ```bash
 # 1. Clone repository về máy tính
-git clone https://github.com/HuyIT-art/Kiem_Thu_Phan_Mem_Nhom_16.git
+git clone https://github.com/HuyIT-art/Ma_Nguon_Mo_Nhom_07.git
 
 # 2. Di chuyển vào thư mục dự án
-cd Kiem_Thu_Phan_Mem_Nhom_16
+cd Ma_Nguon_Mo_Nhom_07
 ```
 
 ---
@@ -357,30 +357,9 @@ Sau khi chạy lệnh `npx prisma db seed`, hệ thống đã sẵn sàng các t
 ---
 
 
-## 12. HƯỚNG DẪN KIỂM THỬ PHẦN MỀM (TESTING)
 
-Dự án phục vụ môn học **Kiểm thử phần mềm**, cấu trúc mã nguồn được thiết kế thuận tiện cho các loại hình kiểm thử:
 
-### 12.1 Kiểm thử Đơn vị & Tích hợp (API Testing)
-* Các file cấu hình test hoặc kịch bản kiểm thử API bằng Postman Collection / Newman / Jest có thể đặt tại thư mục `backend/tests/` hoặc thư mục gốc `tests/`.
-* Chạy kịch bản kiểm thử tự động (nếu có cấu hình script):
-  ```bash
-  cd backend
-  npm test
-  ```
-
-### 12.2 Kiểm thử Chức năng & Luồng Người dùng (Manual & End-to-End Testing)
-Nhóm có thể thực hiện kiểm thử theo ma trận Test Cases mẫu:
-1. **TC-AUTH-01:** Đăng ký tài khoản với email đã tồn tại $\rightarrow$ Kỳ vọng: Báo lỗi email trùng.
-2. **TC-AUTH-02:** Đăng nhập sai mật khẩu $\rightarrow$ Kỳ vọng: Báo lỗi thông tin đăng nhập không hợp lệ.
-3. **TC-BOOKING-01:** Chọn ngày trả phòng trước ngày nhận phòng $\rightarrow$ Kỳ vọng: Bị chặn ngay tại giao diện hoặc backend báo lỗi 400.
-4. **TC-BOOKING-02:** Đặt trùng ngày với đơn đã xác nhận $\rightarrow$ Kỳ vọng: Backend báo lỗi xung đột lịch phòng.
-5. **TC-PAYMENT-01:** Thanh toán mô phỏng thành công $\rightarrow$ Kỳ vọng: Trạng thái chuyển thành `DaThanhToan`, xuất hiện biên lai.
-6. **TC-ROLE-01:** Tài khoản khách hàng truy cập `/admin/dashboard` $\rightarrow$ Kỳ vọng: Bị chuyển hướng hoặc chặn truy cập (403 Forbidden).
-
----
-
-## 13. BẢNG KHẮC PHỤC SỰ CỐ THƯỜNG GẶP (TROUBLESHOOTING)
+## 12. BẢNG KHẮC PHỤC SỰ CỐ THƯỜNG GẶP (TROUBLESHOOTING)
 
 | Hiện tượng lỗi | Nguyên nhân gốc | Cách khắc phục |
 | :--- | :--- | :--- |
@@ -394,7 +373,7 @@ Nhóm có thể thực hiện kiểm thử theo ma trận Test Cases mẫu:
 
 ---
 
-## 14. HƯỚNG DẪN BUILD PRODUCTION
+## 13. HƯỚNG DẪN BUILD PRODUCTION
 
 ### 14.1 Build Frontend
 ```bash
@@ -411,5 +390,5 @@ npm run preview
 cd backend
 NODE_ENV=production node server.js
 ```
-*Bản quyền tài liệu thuộc về Nhóm 16 - Dự án Kiểm thử phần mềm & Phát triển phần mềm ứng dụng.*
+*Bản quyền tài liệu thuộc về Nhóm 07 - Dự án mã nguồn mở & Phát triển phần mềm ứng dụng.*
 
